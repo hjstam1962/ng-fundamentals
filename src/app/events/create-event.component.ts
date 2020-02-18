@@ -15,11 +15,11 @@ import { EventService } from './index'
 })
 
 export class CreateEventComponent implements OnInit {
-    newEvent
-    isDirty:boolean = true
+     isDirty:boolean = true
     constructor(private router:Router, private eventService:EventService) { }
 
-    ngOnInit() { }
+    ngOnInit() { 
+     }
 
     saveEvent(formValues) {
         this.eventService.saveEvent(formValues)
