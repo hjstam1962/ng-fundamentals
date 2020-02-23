@@ -11,7 +11,9 @@ import {
   CreateEventComponent,
   EventRouteActivator,
   EventListResolver,
-  CreateSessionComponent
+  CreateSessionComponent,
+  SessionListComponent,
+  DurationPipe
 } from './events/index'
 
 import { EventsAppComponent } from './events-app.component';
@@ -21,6 +23,7 @@ import { ToastrService } from './common/toastr.service';
 import { appRoutes } from './routes';
 import { Error404Component } from './errors/404.component';
 import { AuthService } from './user/auth.service';
+import { CollapsibleWellComponent } from './common/collapsible-well.component';
 
 @NgModule({
   imports: [
@@ -37,7 +40,10 @@ import { AuthService } from './user/auth.service';
     EventDetailsComponent,
     CreateEventComponent,
     Error404Component,
-    CreateSessionComponent
+    CreateSessionComponent,
+    SessionListComponent,
+    CollapsibleWellComponent,
+    DurationPipe
   ],
   providers: [
     EventService, 

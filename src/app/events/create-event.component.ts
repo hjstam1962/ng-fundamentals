@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { EventService } from './index'
+import { EventService } from './shared/index'
 
 @Component({
+    selector:'create-event',
     templateUrl: 'create-event.component.html',
     styles: [`
         em {float:right; color:#E05C65; padding-left: 10px;}
