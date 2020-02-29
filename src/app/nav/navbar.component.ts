@@ -17,7 +17,8 @@ import { EventService } from '../events/index'
 export class NavBarComponent implements OnInit {
     searchTerm: string = "";
     foundSessions: ISession[];
-    constructor(private authService:AuthService, private eventService:EventService) { }
+    constructor(private authService:AuthService, private eventService:EventService) { 
+    }
 
     ngOnInit() { }
     
@@ -25,7 +26,6 @@ export class NavBarComponent implements OnInit {
         this.eventService.searchSessions(searchTerm).subscribe
             (sessions => {
                 this.foundSessions = sessions;
-                console.log(this.foundSessions);
-        })
+            })
     }
 }
