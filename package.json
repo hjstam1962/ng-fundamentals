@@ -21,7 +21,7 @@
     "@angular/router": "~8.2.14",
     "ag-grid-angular": "^22.1.1",
     "ag-grid-community": "^22.1.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ngf-bootstrap": "0.0.5",
     "rxjs": "~6.4.0",
     "toastr": "^2.1.4",
